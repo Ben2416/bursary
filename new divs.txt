@@ -1,0 +1,28 @@
+<div class="alert alert-success">
+	<button data-dismiss="alert" class="close">
+	&times;</button>
+	<i class="icon-ok-sign"></i>
+	<strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info">
+	<button data-dismiss="alert" class="close">
+	&times;
+	</button>
+	<i class="icon-info-sign"></i>
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning">
+	<button data-dismiss="alert" class="close">
+	&times;
+	</button>
+	<i class="icon-exclamation-sign"></i>
+	<strong>Warning!</strong> Best check yo self, you're not looking too good.
+</div>
+<div class="alert alert-danger">
+	<button data-dismiss="alert" class="close">
+	&times;
+	</button>
+	<i class="icon-remove-sign"></i>
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+</div>

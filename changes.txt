@@ -1,0 +1,93 @@
+PERSONAL DATA CHANGES
+*******************************************************************
+ALTER TABLE  `biography` ADD  `disability_status` VARCHAR( 255 ) NOT NULL AFTER  `compound` ;
+
+
+*****************************************************************************
+<div class="col-sm-9">
+	<div class="col-sm-6">
+		<select class="form-control" id="disability_status" name="disability_status">
+			<option value="" selected>Disability Status</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+	</div>	
+	<div class="col-sm-6">
+		<select class="form-control" id="marital_status" name="marital_status">
+			<option value="" selected>Marital Status</option>
+			<option value="single">Single</option>
+			<option value="married">Married</option>
+			<option value="other">Other</option>
+		</select>
+	</div>	
+</div>
+
+
+
+**************************************************************************************
+<script src="university.js"></script>
+
+
+<div class="form-group">
+				<label class="col-sm-3 control-label">
+				
+				</label>
+	<div class="col-sm-9">
+		<div class="col-sm-6">
+			<select class="form-control" id="university_zone" name="university_zone" onchange="changeVals()">
+				<option value="" selected>University Zone</option>
+				<option value="south east">SOUTH EAST</option>
+				<option value="south south">SOUTH SOUTH</option>
+				<option value="south west">SOUTH WEST</option>
+				<option value="north central">NORTH CENTRAL</option>
+				<option value="north east">NORTH EAST</option>
+				<option value="north west">NORTH WEST</option>
+			</select>
+		</div>	
+		<div class="col-sm-6">
+			<select class="form-control" id="university_state" name="university_state">
+				<option value="" selected>University State</option>
+			</select>
+		</div>	
+	</div>
+</div>
+
+
+**********************************************************************
+ALTER TABLE  `educational` ADD  `university_zone` VARCHAR( 255 ) NOT NULL AFTER  `institution_contact_person` ,
+ADD  `university_state` VARCHAR( 255 ) NOT NULL AFTER  `university_zone` ,
+ADD  `university_name` VARCHAR( 255 ) NOT NULL AFTER  `university_state` ,
+ADD  `current_cgpa` VARCHAR( 255 ) NOT NULL AFTER  `university_name` ;
+
+
+*************************************************************************
+
+<div class="form-group">
+				<label class="col-sm-3 control-label">
+				
+				</label>
+	<div class="col-sm-9">
+		<div class="col-sm-6">
+			<select class="form-control" id="university_name" name="university_name">
+				<option value="" selected>University Name</option>
+			</select>
+		</div>	
+		<div class="col-sm-6">
+			<input type="text" class="form-control" placeholder="Current CGPA" name="current_cgpa" id="current_cgpa">
+		</div>	
+	</div>
+</div>
+
+
+****************************************************
+<li>
+
+	<a href="logout.php">
+
+		<i class="clip-exit"></i>
+
+		&nbsp;Log Out
+
+	</a>
+
+</li>
